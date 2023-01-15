@@ -11,6 +11,10 @@ img {
   object-fit: contain;
 }
 
+img:hover {
+  transform: scale(1.1);
+}
+
 ul,
 li {
   list-style-type: none;
@@ -21,7 +25,7 @@ a {
 }
 
 p {
-  color: #727272; 
+  color: #727272;
 }
 
 .container {
@@ -63,8 +67,6 @@ nav.container .menu-list li a {
   font-size: 18px;
   line-height: 26px;
   text-align: center;
-
-  /* Dark 02 */
   color: #424242;
 }
 
@@ -97,12 +99,19 @@ button.btn-primary {
   font-weight: 600;
   font-size: 20px;
   line-height: 23px;
-  padding: 21px 25px;
-  border-color: transparent;
+  padding: 17px 25px;
+  border: 1px solid transparent;
   background: #ff900e;
   border-radius: 8px;
   text-align: center;
   color: #ffffff;
+  cursor: pointer;
+}
+
+button.btn-primary:hover {
+  background: transparent;
+  border: 1px solid #ff900e;
+  color: #ff900e;
 }
 
 .banner-thumbnail {
@@ -284,6 +293,8 @@ section.some-facts .awards-project {
   border: 1px solid #ff900e;
   border-radius: 8px;
   padding: 30px;
+  cursor: pointer;
+  box-shadow: 0px 0px 11px rgb(0 0 0 / 29%);
 }
 
 .awards-project img {
@@ -311,12 +322,14 @@ section.our-sponsor {
   margin-top: 100px;
 }
 
-section.our-sponsor h1 {
+section.our-sponsor h1,
+.section-title {
   font-weight: 700;
   font-size: 45px;
   line-height: 53px;
   color: #131313;
   margin-bottom: 25px;
+  text-align: center;
 }
 
 section.our-sponsor p {
@@ -341,6 +354,43 @@ ul.sponsor-items img {
 
 .sponsor-items a {
   display: inline-block;
+}
+
+/*========================== Get Updates ==========================*/
+section.getUpdates {
+  margin-top: 100px;
+}
+
+.getUpdates_content p {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.getUpdates_content .subscribe_div {
+  width: 60vw;
+  margin: 0 auto;
+  background-color: #ff595930;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.subscribe_div input {
+  border: 1px solid #ff000000;
+  padding: 16px 20px;
+  background-color: #98989847;
+  font-size: 21px;
+  color: black;
+  border-radius: 5px 0px 0px 5px;
+  margin: 30px 0;
+  outline: none;
+}
+
+.subscribe_div button {
+  border-radius: 0px 5px 5px 0px;
 }
 
 /*============================= Footer Area =============================*/
